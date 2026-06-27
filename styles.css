@@ -29,3 +29,15 @@ body{
     margin-left: 400px;
     margin-top: 500px;
 }
+
+.thankyou{
+    font-family: "determination";
+    font-size: 60px;
+    text-align: center;
+}
+
+.thankyousmaller{
+    font-family: "determination";
+    font-size: 30px;
+    text-align: center;
+}
