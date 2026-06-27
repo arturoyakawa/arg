@@ -9,7 +9,7 @@
 }
 
 #message{
-    font-size: 30px;
+    font-size: 10px;
     font-family: "determination";
     text-align: center;
     color: white;
@@ -17,4 +17,15 @@
 
 body{
     background-color: black;
+}
+
+.snow{
+    background-image: url("imgs/snowy.png");
+}
+
+.snowymessage{
+    font-family: "determination";
+    font-size: 10px;
+    margin-left: 400px;
+    margin-top: 500px;
 }

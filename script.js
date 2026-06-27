@@ -1,8 +1,25 @@
 console.log("don't look over here, @pacni7")
-/** @type {HTMLAudioElement} */
-const audio = document.getElementById("fallenchild");
+const msg = document.getElementById("message")
+/** @type {HTMLAudioElement}1*/
+const bgm = document.getElementById("bgm")
 
-audio.volume = .2
-audio.addEventListener("canplaythrough", () => {
-    audio.play();
-}, { once: true });
+let clickedOnce = false
+
+window.addEventListener("click", () => {
+    console.log("click")
+    document.body.classList.add('snow')
+    bgm.volume = .2
+    bgm.preservesPitch = false
+    bgm.playbackRate = .75
+    bgm.play()
+    msg.remove()
+
+    if (clickedOnce) { return }
+
+    let text = document.createElement("p")
+    text.classList.add("snowymessage")
+    text.textContent = "feeling cold?"
+    document.body.appendChild(text)
+
+    clickedOnce = true
+})
